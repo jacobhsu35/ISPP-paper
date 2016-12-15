@@ -1,4 +1,4 @@
-<div>Note : 1) Please insert those corresponding ref by DOI.&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</div><div></div><div>1 Introduction</div><div></div><div>Whole exome sequencing has been
+<div>Note : 1) Please insert those corresponding ref by DOI.&nbsp;</div><div>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;2</div><div></div><div>1 Introduction</div><div></div><div>Whole exome sequencing has been
 used for identifying disease-associated genetic variations. For severely rare
 Mendelian diseases, it has been proven to be an effective approach (Agha, et
 al., 2014). Ex-ome sequencing may also contribute to the understanding of the
@@ -16,7 +16,7 @@ that an apparently healthy person could carry approximately 250~300
 loss-of-function (LoF) single nucleotide vari-ants (SNVs) on average (2010; Via
 García and Genomes Project, 2012). Therefore, the estimation of gene
 pathogenicity and correspond-ing etiologic architecture for diseases pose a
-considerable challenge to human genetic community.</div><div> As
+considerable challenge to human genetic community.</div><div>As
 a result, a number of bioinformatics tools have been developed to prioritize
 protein-changing (i.e., non-synonymous) vari-ants in the human protein-coding genes
 based on predicted deleterious-ness and distinct biological features. The tools
@@ -67,7 +67,7 @@ prioritization scores and a number of genic features for accurately predicting
 the ability of a gene to cause Mendelian diseases of a specif-ic inheritance
 mode compared to other genes in the human genome.</div><div></div><div>2 Methods</div><div></div><div>Collection of gene features and
 benchmark datasets</div><div>Variant level, gene level and
-functional related gene features: </div><div>Population variant profiles in
+functional related gene features:</div><div>Population variant profiles in
 protein-coding genes were obtained from the dataset of NHLBI GO Exome
 Sequencing Project (ESP6500), which included data from more than 200,000
 individuals collected from &gt; 20 clinical sequencing studies. We extracted
@@ -91,7 +91,7 @@ gene prioritization scores, HI (Huang, et al., 2010), REC (MacArthur, et al.,
 down-loaded from dbNSFP (Liu, et al., 2013) and the corresponding studies.
 Tissue-specific expression information was obtained from Liu et.al (Liu, et
 al., 2008). See S1 Table for details.</div><div>Benchmark disease-associated gene
-sets: </div><div>Ten lists of experts-curated
+sets:</div><div>Ten lists of experts-curated
 disease genes were aggregated based on the OMIM database (Online Mendelian
 Inheritance in Man) as hO-MIM gene lists (Blekhman, et al., 2008). They were hOMIM_AD (consisting of 419
 autosomal dominant disease genes), hOMIM_AR (consisting of 569 autosomal
@@ -124,7 +124,7 @@ CGD_AD (consist-ing of 876 autosomal dominant disease genes), CGD_AR
 (consisting of 1,500 autosomal recessive disease genes), CGD_AD_AR (consisting
 of 304 genes with both autosomal dominant and recessive mode of inher-itance),
 CGD_XL (consisting of 182 X-linked Mendelian disease genes), CGD_Adult
-(consisting of 69 genes ) and CGD_Paediatric (consisting of 1,401 genes). </div><div>In order to have a more
+(consisting of 69 genes ) and CGD_Paediatric (consisting of 1,401 genes).</div><div>In order to have a more
 comprehensive annotation of the protein-coding genes, we also collected other
 gene lists from the public data-base and previous literature. Also, we obtained
 the genes for both com-plex and Mendelian disorders characterized by Jin W,
@@ -142,7 +142,7 @@ of the same size; 3)calculated a z-score for feature i for the
 disease-associated gene set, Zi, based on the central limit theorem, i.e., Zi =
 (Xi - µi)/σi (Figure 2, S2 Table); and 4)obtained the corresponding p-value of
 the z-score calculated. A Bonferroni-corrected p-value threshold of 0.05 / 468
-≈ 1.068 × 10-4 was used to declare significance. </div><div>Constructing machine learning model
+≈ 1.068 × 10-4 was used to declare significance.</div><div>Constructing machine learning model
 from gene features</div><div>We used a random forest implemented
 in Weka (<a href="http://www.cs.waika">http://www.cs.waika</a> <a href="http://to.ac.nz/ml/weka/">to.ac.nz/ml/weka/</a>) to construct a machine learning
 model with different combinations of features and prioritization scores as
@@ -155,7 +155,7 @@ gene lists were used as the training dataset. In the XL mod-el, the random
 genes which were only sampled from those on X chro-mosome.10-fold
 cross-validation was used to assess the performance of the models for various
 modes of inheritance constructed using the sig-nificant predictors. The best
-model was defined as the one with the largest Area Under Curve (AUC). </div><div></div><div>3 Results</div><div></div><div>In this study, we first collected
+model was defined as the one with the largest Area Under Curve (AUC).</div><div></div><div>3 Results</div><div></div><div>In this study, we first collected
 30 known disease-associated gene lists from previous independent studies and
 public databases as the bench-mark training datasets for building and testing
 the inheritance-specific disease gene prediction models. While various, these
@@ -164,7 +164,7 @@ includ-ed nine gene groups of different inheritance modes and eight gene groups
 for disease with different ages of onset. Besides, we collected 14 gene
 features as well as 4 widely-used gene prioritization scores as predictors in
 our prediction models (See Methods for details). The data collection and
-analysis framework are summarized in Supplementary S1 Table and Figure 1. </div><div>&nbsp;</div><div>Figure 1: Schematic diagram
+analysis framework are summarized in Supplementary S1 Table and Figure 1.</div><div>&nbsp;</div><div>Figure 1: Schematic diagram
 illustrating the construction of the inheritance modes specific gene
 prioritization model.</div><div></div><div>3.1 Existing
 gene prioritization scores distinguished among the different disease-associated
@@ -173,7 +173,7 @@ of the four popular gene-based prioritization methods, for distinguishing among
 the different disease-associated gene lists. Correlation analysis suggests that
 only HI and REC had the strongest Spearman correlation (S1 Figure, S2 Table),
 indicating that these four methods only have modest overlaps with each other
-(S1 Text) </div><div>Surprisingly, we found that the REC
+(S1 Text)</div><div>Surprisingly, we found that the REC
 score had unexpectedly good per-formance in predicting disease-associated genes
 among all four gene prioritization scores examined. However, Figure 2 and S3
 Table show that the REC scores failed to carry out both the correct inheritance
@@ -182,12 +182,12 @@ modes and recessive disease causation probability. For instance, both hOMIM_AD
 hOMIM_AD even had a marginally higher REC score (recessive disease causation
 probability) when com-pared with hOMIM_AR (Rank sum p-value = 0.061) (S2
 Figure). The same was observed when we compared the REC score in CGD_AD with
-that in CGD_AR (Rank sum p-value = 1.554E-07). </div><div>For the HI scores, the performance
+that in CGD_AR (Rank sum p-value = 1.554E-07).</div><div>For the HI scores, the performance
 in classifying autosomal recessive genes from random gene sets was poor. All
 recessive disease-associated genes in the lists Genic_Recessive, hOMIM_AR and
 CGD_AR, as well as Non_ess genes had no difference or significantly lower HI
 score compared to random genes (S3 Table, S2 Text). Also, the AUC of HI score
-only had, respectively, 0.69 and 0.49 in CGD_AD and CGD_AR (Figure 3). </div><div>The GENIC score was purposed to
+only had, respectively, 0.69 and 0.49 in CGD_AD and CGD_AR (Figure 3).</div><div>The GENIC score was purposed to
 estimate the tolerant ability of a gene with functional variations, and most
 disease-associated gene lists had significantly lower GENIC score, especially
 hOMIM_AD (p = 5.91E-14), hOMIM_earlyOnset (p = 1.11E-10) and Genic_Denovo (p =
@@ -201,7 +201,7 @@ mutations. The gene lists hOMIM_AD and CGD_AD inclined to have significantly
 higher CONS score (p = 2.62E-10 and p = 4.97E-51, respectively), implying that
 these genes are more vulnerable to de novo mutations (S2 Text), and this is
 consistent with the definition of dominant diseases. However, the AUC of CONS
-score only had, respectively, 0.65 and 0.43 in CGD_AD and CGD_AR (Figure 3). </div><div>&nbsp;</div><div>Figure 2. Gene characteristics
+score only had, respectively, 0.65 and 0.43 in CGD_AD and CGD_AR (Figure 3).</div><div>&nbsp;</div><div>Figure 2. Gene characteristics
 versus disease-associated gene lists heat map (with clus-tering based on the
 empirical significance levels). Red colors represent higher value than expected
 from random gene sets of the same size. The attached dendrogram on the left
@@ -237,7 +237,7 @@ CONS scores than early-onset disease genes like CGD_Paediatric and
 hOMIM_earlyOnset, implying that dominant disease inheritance mech-anisms may be
 more haploinsufficient and de novo mutation sensitive.</div><div>3.3 Development
 of a disease inheritance mode specific gene prioritization system,
-incorporating the unique patterns of biological and functional characteristics </div><div>Here, we built a unified framework
+incorporating the unique patterns of biological and functional characteristics</div><div>Here, we built a unified framework
 by the random forest approach to combine multiple biological features and
 prioritization scores for pre-dicting pathogenic genes with specific
 inheritance modes. The training datasets included CGD_AD (876 genes), CGD_AR
@@ -255,7 +255,7 @@ disease-associated genes, with an AUC of 0.84 in CGD_XL. However, our combined
 model only had similar AUC compared to the REC scores in hOMIM_earlyOnset and
 CGD_Paediatric (S3 Figure). In final, we annotated 18859 protein-coding genes
 and provided a set of pathogenic scores on each gene (S4 Table) for dominant,
-recessive and X-linked (AD, AR and XL scores). </div><div></div><div>3.4 Validation
+recessive and X-linked (AD, AR and XL scores).</div><div></div><div>3.4 Validation
 of the new gene prioritization system</div><div>&nbsp;</div><div>To validate the performance of our
 combined prediction model, we checked the prediction scores for genes which
 were not included in the training dataset. Venn diagrams (S4A Figure) show the
@@ -276,7 +276,7 @@ study reported seven novel and validated XLID (X-linked Intellec-tual
 Disability) genes (CLCN4, CNKSR2, FRMPD4, KLHL15, LAS1L, RLIM and USP27X) as
 well as two novel candidate XLID genes (CDK16 and TAF1). Seven of nine genes
 are on the top 45.1% of the combined prediction model, and all genes have at
-least 0.02 (Top 61.2%) in XL combined prediction score system. </div><div>&nbsp;</div><div>Table 1. Example of genes
+least 0.02 (Top 61.2%) in XL combined prediction score system.</div><div>&nbsp;</div><div>Table 1. Example of genes
 associated with diseases known to have a specific mode of inheritance from
 published literatures and their corresponding prediction scores.&nbsp;</div><div>By comparing a set of score of a
 gene for inheritance mode specific models, the possible inheritance mode of the
@@ -305,7 +305,7 @@ selected gene sets of the same size (S4 Text) Additionally, the recessive
 dis-ease-associated genes, in particular, had more complicated regulatory
 processes and genetic variant tolerant ability, and the early-onset
 dis-ease-associated genes may have de novo mutations with merely neutral
-effect. </div><div>Interestingly, even though both HI
+effect.</div><div>Interestingly, even though both HI
 and REC scores make use of various gene features in their computation, none of
 the gene prioritization scores examined had a strong correlation with the gene
 features we investigated (S1, S3 Text). This suggests that the gene features we
@@ -314,7 +314,7 @@ prediction model. Furthermore, we found that the REC score can well predict
 many disease-causal genes as all disease-associated gene lists we collected had
 significantly higher recessive disease causation probability (REC, p ≤
 1.99E-8). But it is interesting to note that not all of the disease-associated
-gene lists came from diseases with a recessive inheritance mode. </div><div>Figure 2 shows the dendrogram of
+gene lists came from diseases with a recessive inheritance mode.</div><div>Figure 2 shows the dendrogram of
 cluster analysis based on the empiri-cal Z scores for comparing gene feature
 patterns among 12 disease-associated gene lists (S5 Text). In order to reduce
 the noise, only gene lists with more than 450 genes (except for CGD_XL) were
