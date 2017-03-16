@@ -1,5 +1,4 @@
 setwd("/home/jacobhsu")
-#data <- read.csv("/Users/sjhsu/Dropbox/HKU_LAB/Non_essential_paper/Table/S1_Table.csv",header=T)
 data <- read.csv("./ISPP_Paper/Data/S1.csv",header=T)
 data$gene = NULL
 library(corrplot)
